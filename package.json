@@ -1,0 +1,29 @@
+{
+  "name": "bc-landing-page-2021",
+  "private": true,
+  "dependencies": {
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.4.2",
+    "lint-staged": "^11.1.2",
+    "turbolinks": "^5.2.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^7.0.2",
+    "prettier": "2.3.2",
+    "stylelint": "^13.13.1",
+    "webpack-dev-server": "^4.0.0"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  }
+}
