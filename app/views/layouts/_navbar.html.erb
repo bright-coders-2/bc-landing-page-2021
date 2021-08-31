@@ -1,0 +1,54 @@
+<head>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      var images = [
+        "/assets/list.svg",
+        "/assets/close.svg"
+      ];
+
+      var imageIndex = 0;
+
+      $(".navbar-toggler").on("click", function () {
+        imageIndex = (imageIndex + images.length + 1) % (images.length);
+        $("#image").attr('src', images[imageIndex]);
+      });
+    });
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <div class="logo">
+        <img src="/assets/LogoBC.svg" alt="BCLogo" id="logo">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="border: none; box-shadow: none">
+        <img src="/assets/list.svg" id="image">
+      </button>
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" id="link">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" id="link">Programas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" id="link">Graduados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" id="link">Convocatorias</a>
+          </li>
+          <li class="nav-item" id="borderContacto">
+            <a class="nav-link" aria-current="page" href="#" id="linkContacto">Contacto</a>
+          </li>
+          
+        </div>
+          <div class="group609">
+            <img src="/assets/Group 609.svg" alt="group609">
+          </div>
+      </div>
+  </nav>
+</body>

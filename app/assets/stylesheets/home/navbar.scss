@@ -1,0 +1,71 @@
+$bright-cyan: #5eefe1;
+
+%text-under {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+nav {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navbar{
+  background-image: radial-gradient(circle at 120.71% 50%, #7043f3 0, #3c3cf2 50%, #0037f1 100%);
+} 
+
+#logo{
+  height: 50px;
+  width: 160px;
+}
+
+#navbarTogglerDemo02{
+  text-align: center;
+}
+
+#link {
+  color: white;
+  margin: 3%;
+  &:hover, &:active {
+    color: $bright-cyan;
+    font-weight: bold;
+    @extend %text-under;
+  }
+}
+
+#linkContacto{
+  color: white;
+  font-weight: bold;
+  margin: 3%;
+  &:hover {
+    color: $bright-cyan;
+    @extend %text-under;
+  }
+}
+
+#image {
+  height: 50px;
+}
+
+@media (min-width:992px){
+  #logo{
+    height: 80px;
+    width: 300px;
+   }
+
+  .group609{
+   display: none;
+  }
+
+  #linkContacto{
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 100px;
+    &:hover {
+      color: $bright-cyan;
+      @extend %text-under;
+    }
+  }
+}
