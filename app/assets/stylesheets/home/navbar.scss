@@ -14,9 +14,21 @@ nav {
   background-image: radial-gradient(circle at 120.71% 50%, #7043f3 0, #3c3cf2 50%, #0037f1 100%);
 } 
 
-#logo{
+#logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logo-open {
   height: 43.7px;
   width: 33.9px;
+  margin-left: 37vw;
+}
+
+.logo-closed {
+  height: 30px;
+  width: 150px;
+  margin-left: 0px;
 }
 
 #navbarTogglerDemo02{
@@ -49,10 +61,17 @@ nav {
 
 @media (min-width:768px){
 
-  #logo{
-    height: 51.1px;
-    width: 37.4px;
-   }
+  .logo-open {
+    height: 100px;
+    width: 80px;
+    margin-left: 28vmax;
+  }
+  
+  .logo-closed {
+    height: 50px;
+    width: 250px;
+    margin-left: 0px;
+  }
 
 }
 
@@ -63,8 +82,8 @@ nav {
   }
 
   #logo{
-    height: 61.1px;
-    width: 47.4px;
+    height: 50px;
+    width: 250px;    
    }
 
   .group609{
