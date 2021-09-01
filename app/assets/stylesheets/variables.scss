@@ -1,0 +1,14 @@
+$blue: #0039a6;
+$yellow: #ffeb00;
+$indigo: #5000ff;
+$turquoise: #5eefe1;
+$black: #282828;
+$white: #fff;
+
+@mixin button($bg-color, $border-radius, $color-text, $padding-top_bottom, $padding-left_right) {
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  color: $color-text;
+  padding: $padding-top_bottom $padding-left_right;
+  text-decoration: none;
+}
