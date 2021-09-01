@@ -15,8 +15,8 @@ nav {
 } 
 
 #logo{
-  height: 50px;
-  width: 160px;
+  height: 43.7px;
+  width: 33.9px;
 }
 
 #navbarTogglerDemo02{
@@ -47,10 +47,24 @@ nav {
   height: 50px;
 }
 
-@media (min-width:992px){
+@media (min-width:768px){
+
   #logo{
-    height: 80px;
-    width: 300px;
+    height: 51.1px;
+    width: 37.4px;
+   }
+
+}
+
+@media (min-width:992px){
+  
+  nav {
+    height: 90px;
+  }
+
+  #logo{
+    height: 61.1px;
+    width: 47.4px;
    }
 
   .group609{
