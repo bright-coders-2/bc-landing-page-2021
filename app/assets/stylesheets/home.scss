@@ -158,3 +158,85 @@
     } 
   }
 }
+
+@media (min-width: 1024px) {
+  .lading-top {
+    height: 800px;
+    .container {
+      max-width: 100vw;
+      width: 90%;
+
+      .hero {
+        display: flex;
+        flex-direction: row;
+        height: 70%;
+        &-info {
+          line-height: 220%;
+          min-width: 40vw;
+          margin: 9vh 0;
+
+          &_heading {
+            font-size: 50px;
+
+            &-span {
+              display: block;
+              font-size: 45px;
+              font-weight: bolder;
+              margin-bottom: 20px;
+            }
+          }
+
+          &_text-v1 {
+            display: none;
+          }
+
+          &_text-v2 {
+            display: block;
+            color: $white;
+            line-height: 40px;
+            margin-bottom: 35px;
+
+            &_p {
+              margin: 0;
+              font-size: 32px;
+              font-weight: lighter;
+            }
+          }
+
+          &_button {
+            font-size: 20px;
+            padding: 1rem 0;
+            margin: 0;
+            width: 55%;
+          }
+        }
+
+        &-image {
+          &_women {
+            top: -10vw;
+            right: 7vw;
+            width: 55vw;
+          }
+
+          &_rectangles {
+            bottom: 105vh;
+            right: 10vw;
+            gap: 20px;
+
+            &-colored1 {
+              width: 50%;
+              left: 80px;
+              top: 150px;
+            }
+
+            &-colored2 {
+              width: 70%;
+              bottom: 140px;
+              left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
