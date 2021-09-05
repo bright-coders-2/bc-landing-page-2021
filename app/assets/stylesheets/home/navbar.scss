@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 $bright-cyan: #5eefe1;
 
 %text-under {
-  text-decoration: underline;
-  text-underline-position: under;
+  border-bottom: 4px solid $bright-cyan;
+}
+
+%align-center {
+  position: relative;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 nav {
+  display: block;
   padding-left: 5%;
   padding-right: 5%;
+  font-family: Ubuntu;
+  font-weight: bold;
 }
 
 .navbar{
@@ -22,20 +32,40 @@ nav {
 .logo-open {
   height: 43.7px;
   width: 33.9px;
-  margin-left: 37vw;
 }
 
 .logo-closed {
   height: 30px;
   width: 150px;
   margin-left: 0px;
+   
+}
+
+.logo-container-open{
+  left: 35px;
+  @extend %align-center;
+}
+
+.nav-item {
+  @extend %align-center;
+}
+
+.logo-container-close{
+  margin-right: 0;
+  margin-left: 0;
 }
 
 #navbarTogglerDemo02{
   text-align: center;
+  &:hover, &:active {
+    color: $bright-cyan;
+    font-weight: bold;
+  }
 }
 
+
 #link {
+  border-bottom: 4px solid transparent;
   color: white;
   margin: 3%;
   &:hover, &:active {
@@ -46,6 +76,7 @@ nav {
 }
 
 #linkContacto{
+  border-bottom: 4px solid transparent;
   color: white;
   font-weight: bold;
   margin: 3%;
@@ -59,12 +90,15 @@ nav {
   height: 50px;
 }
 
-@media (min-width:768px){
+.group609{
+  margin-top: 15px;
+ }
+
+@media (min-width:768px) {
 
   .logo-open {
     height: 100px;
     width: 80px;
-    margin-left: 28vmax;
   }
   
   .logo-closed {
@@ -90,15 +124,21 @@ nav {
    display: none;
   }
 
+  #link {
+    &:hover {
+    @extend %text-under;
+    }
+  }
+
   #linkContacto{
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     font-weight: bold;
     border-radius: 8px;
     width: 100px;
     &:hover {
       color: $bright-cyan;
-      @extend %text-under;
+      border: 2px solid $bright-cyan;
     }
   }
 }
