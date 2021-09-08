@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <div class="logo-container-close" id = "logo-container">
+      <%= image_tag "BCnameLogo.png", alt: "BCLogo", class: "logo-closed", id:"logo" %> 
+    </div>
+    <button id="button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="border: none; box-shadow: none">
+      <%= image_tag "list.svg", alt: "BCLogo", id:"image" %> 
+    </button>
+    <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+      <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" id="link">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" id="link">Programas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" id="link">Graduados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" id="link">Convocatorias</a>
+        </li>
+        <li class="nav-item" id="borderContacto">
+          <a class="nav-link" aria-current="page" href="#" id="linkContacto">Contacto</a>
+        </li>
+        
+      </div>
+        <div class="group609">
+          <%= image_tag "Group 609.svg", alt: "group609" %> 
+        </div>
+    </div>
+</nav>
+
+  <%= javascript_pack_tag 'navbar', 'data-turbolinks-track': 'reload' %>
+  
