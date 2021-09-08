@@ -11,3 +11,10 @@
  - Indigo: #5000ff
  - Turquesa: #5eefe1
  - Nero: 282828
+
+### Breakpoints
+
+- Mobile: 375px 
+- Tablet: 768px
+- Desktop: 992px
+- Max: 1920px
