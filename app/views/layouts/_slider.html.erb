@@ -1,0 +1,86 @@
+<div id="sliderBC" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#sliderBC" data-bs-slide-to="0" class="active inactive" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#sliderBC" data-bs-slide-to="1" class="inactive" ariaaria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#sliderBC" data-bs-slide-to="2" class="inactive" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#sliderBC" data-bs-slide-to="3" class="inactive" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#sliderBC" data-bs-slide-to="4" class="inactive" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#sliderBC" data-bs-slide-to="5" class="inactive" aria-label="Slide 6"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag "costo.png", class:"d-block w-15" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Costo</h1>
+        <ul>
+          <li id="costo-text">Becas al 100% para todos los aceptados.</li>
+          <li>La beca cubre los gastos de inscripción y colegiatura mensual.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "cultura.png", class:"d-block w-15" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Cultura</h1>
+        <ul>
+          <li>Desarrolla habilidades interpersonales para trabajar en equipo.</li>
+          <li>Conoce herramientas y estrategias que te permitirán ser más eficiente y efectivo.</li>
+          <li>Vive una experiencia de cultura de trabajo remoto.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "excelencia.png", class:"d-block w-15" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Excelencia</h1>
+        <ul>
+          <li>Escribe código de calidad aplicando las mejores  prácticas y estándares de programación.</li>
+          <li>Desarrolla guiado por pruebas (TDD).</li>
+          <li>Administra de forma correcta repositorios remotos compartidos.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "comunidad.png", class:"d-block w-15" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Comunidad</h1>
+        <ul>
+          <li>Conoce desarrolladores apasionados y crece junto con ellos.</li>
+          <li>Construye o extiende tu red de colaboración.</li>
+          <li>Contribuye a proyectos open source.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "proceso.png", class:"d-block w-15" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Proceso</h1>
+        <ul>
+          <li>Aplica a la convocatoria.</li>
+          <li>Resuelve un par de retos.</li>
+          <li>¡Inscríbete!</li>
+        </ul>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "duracion.png", class:"d-block w-15" %>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Duración</h1>
+        <ul>
+          <li>Los programas tienen una duración de 6 meses.</li>
+          <li>Disponibilidad de lunes a viernes:</li>
+              Horario matutino de 9:00 a 14:00 | Horario vespertino de 14:00 a 19:00
+          <li>Todas las actividades se realizan de manera remota.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#sliderBC" data-bs-slide="prev">
+    <%= image_tag "previous.png", class:"d-block w-15" %>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#sliderBC" data-bs-slide="next">
+    <%= image_tag "next.png", class:"d-block w-15" %>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

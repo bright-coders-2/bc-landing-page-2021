@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+$bright-cyan: #5eefe1;
+$bright-yellow: #ffec00;
+
+.carousel {
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,57,166,1) 0%, rgba(80,0,255,1) 100%);
+  font-family: Ubuntu;
+  h1 {
+    text-align: justify;
+    color: $bright-yellow;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  ul {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  #costo-text {
+    color: $bright-cyan;
+  }
+}
+
+.carousel-indicators button.inactive,
+.carousel-indicators button.active {
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 0;
+  background-color: white;
+}
+
+.carousel-indicators button.active{
+  background: $bright-cyan;
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    width: 1592px;
+    height: 360px;
+    margin: 40px;
+    padding: 72px 44px 32px;
+    border-radius: 24px;
+    margin-left: 164px;
+  }
+
+  .carousel-caption {
+    margin-top: 50px;
+  }
+
+  .carousel-item {
+    margin-left: 268px;
+    margin-bottom: 92px;
+    .carousel-caption {
+      margin-top: 50px;
+    }
+  }
+
+  .carousel-indicators button.inactive,
+  .carousel-indicators button.active {
+    margin: 10px;
+    margin-bottom: 32px;
+    width:24px;
+    height: 24px;
+  }
+
+}
