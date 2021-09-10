@@ -1,0 +1,37 @@
+es:
+  menu:
+    logo: "BrightCoders Academy Logo"
+    about_us: "Nosotros"
+    study_programs: "Programas"
+    graduates: "Graduados"
+    announcement: "Convocatorias"
+    contact: "Contacto"
+  title:
+    brightcoders: "BrightCoders"
+  hero:
+    heading: "Desarrolla e"
+    heading_span: "impulsa tu talento."
+    info_p1_r1: "Mediante una experiencia"
+    info_p1_r2: "de aprendizaje única."
+    info_p2_r1: "Vive una experiencia de"
+    info_p2_r2: "aprendizaje única."
+    button: "Conoce nuestros programas"
+    image: "Mujer desarrolladora"
+    image_background: "Formas de colores"
+  description_section:
+    items:
+    - title: "¿Qué somos?"
+      description: "Somos una aceleradora de talento que brinda a jóvenes con iniciativa y ganas de aprender programas de
+                certificación diseñados para potenciar sus habilidades, mejorar sus posibilidades de acceso a un empleo de
+                calidad y condiciones de vida."
+      icon: 'icon-cap'
+    - title: "¿Qué ofrecemos?"
+      description: "Una experiencia de aprendizaje única que te permitirá iniciar una carrera en tecnología gracias a la
+                capacitación y experiencia que lograrás colaborando en proyectos de desarrollo software reales y el
+                acompañamiento de una comunidad de mentores experimentados."
+      icon: 'icon-computer'
+    - title: "BrightCoders"
+      description: "BrightCoders Academy capacita a estudiantes, egresados y jóvenes con ganas de aprender y con conocimientos
+                intermedios de programación orientada a objetos en HTML, CCS, y JS para iniciar una carrera en tecnología.
+                También es una opción para acreditar las prácticas o estancias profesionales."
+      icon: 'icon-lamp'

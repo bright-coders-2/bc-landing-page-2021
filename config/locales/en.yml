@@ -1,33 +1,37 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  menu:
+    logo: "BrightCoders Academy Logo"
+    about_us: "About us"
+    study_programs: "Programs"
+    graduates: "Graduates"
+    announcement: "Announcement"
+    contact: "Contact"
+  title:
+    brightcoders: "BrightCoders"
+  hero:
+    heading: "Develop and"
+    heading_span: "boost your talent."
+    info_p1_r1: "Through a unique"
+    info_p1_r2: "learning experience."
+    info_p2_r1: "Live a unique"
+    info_p2_r2: "learning experience."
+    button: "Get to know our programs"
+    image: "Developer woman"
+    image_background: "Colored shapes"
+  description_section:
+    items:
+    - title: "What are we?"
+      description: "We are a talent accelerator that provides young people with initiative and desire to learn programs
+                certification designed to enhance your skills, improve your chances of accessing a job from
+                quality and living conditions."
+      icon: 'icon-cap'
+    - title: "What do we offer?"
+      description: "A unique learning experience that will allow you to start a career in technology thanks to the
+                training and experience that you will achieve by collaborating on real software development projects and
+                accompaniment by a community of experienced mentors."
+      icon: 'icon-computer'
+    - title: "BrightCoders"
+      description: "BrightCoders Academy trains students, graduates and young people with a desire to learn and with knowledge
+                Intermediate object-oriented programming in HTML, CCS, and JS to start a career in technology.
+                It is also an option to accredit internships or professional stays."
+      icon: 'icon-lamp'

@@ -14,6 +14,12 @@ module BcLandingPage2021
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
+    config.i18n.available_locales = %i[es en]
+
+    config.i18n.default_locale = 'es'
+
+    config.time_zone = 'Mexico City'
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
