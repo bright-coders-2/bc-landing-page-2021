@@ -35,3 +35,21 @@ es:
                 intermedios de programación orientada a objetos en HTML, CCS, y JS para iniciar una carrera en tecnología.
                 También es una opción para acreditar las prácticas o estancias profesionales."
       icon: 'icon-lamp'
+  our_programs:
+    items:
+    - img: "logo-rails.png"
+      class: "program_img"
+      title: "Web"
+      description: "Desarrollo web Ruby on Rail"
+    - img: "logo-react.png"
+      class: "program_img"
+      title: "Mobile"
+      description: "Desarrollador móvil React Native"
+    - img: "Shopify_logo.png"
+      class: "program_img"
+      title: "E-commerce"
+      description: "Desarrollador Shopify StoreFront"
+    - img: "Group 48.png"
+      class: " ux "
+      title: "Design"
+      description: "Diseñador UI/UX"

@@ -35,3 +35,21 @@ en:
                 Intermediate object-oriented programming in HTML, CCS, and JS to start a career in technology.
                 It is also an option to accredit internships or professional stays."
       icon: 'icon-lamp'
+  our_programs:
+    items:
+    - img: "logo-rails.png"
+      class: "program_img"
+      title: "Web"
+      description: "Ruby on rail Web Developer"
+    - img: "logo-react.png"
+      class: "program_img"
+      title: "Mobile"
+      description: "React Native Mobile Developer"
+    - img: "Shopify_logo.png"
+      class: "program_img"
+      title: "E-commerce"
+      description: "Shopify StoreFront Developer"
+    - img: "Group 48.png"
+      class: " ux "
+      title: "Design"
+      description: "UI/UX Designer"
