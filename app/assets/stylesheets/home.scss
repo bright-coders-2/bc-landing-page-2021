@@ -1,9 +1,9 @@
 @import './variables.scss';
-
 .lading-top{
   background: rgb(2,0,36);
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,57,166,1) 0%, rgba(80,0,255,1) 100%);
-  height: 926px;
+  padding-top: 30px;
+  height: 100vh;
   overflow: hidden;
 
   .container{
@@ -57,17 +57,18 @@
         height: auto;
         margin: 0 auto;
         position: relative;
-        right: 230px;
-        top: 22px;
-        width: 700px;
+        right: 205px;
+        bottom: 85px;
+        width: 600px;
         z-index: 1;
+        
       }
 
       &_rectangles{
-        bottom: 500px;
+        bottom: 534px;
         display: flex;
         justify-content: center;
-        right: 106px;
+        right: 118px;
         position: relative;
 
         &-colored1{
@@ -76,19 +77,50 @@
         }
 
         &-colored2{
-          bottom: 100px;
-          right: 20px;
+          bottom: 80px;
+          right: 43px;
           position: relative;
-          width: 110%;
+          max-width: 110%;
         }
       }
     }
   }
 }
 
-@media(min-width: 768px){
+@media screen and (min-width: $mobile-md){
   .lading-top{
-    height: 888px;
+    padding-top: 40px;
+    max-height: 667px;
+  }
+}
+
+@media screen and (min-width: $mobile-lg){
+  .hero-image{
+    &_women{
+      left: -168px;
+    }
+
+    &_rectangles{
+      left: -70px;
+      gap: 1rem;
+
+      &-colored1{
+        width: 330px;
+      }
+
+      &-colored2{
+        left: -45px;
+        width: 500px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: $tablet-md){
+  .lading-top{
+    max-height: 888px;
+    
     .container{
       width: 85%;
 
@@ -133,24 +165,24 @@
 
         &-image{
           &_women{
-            top: -60px;
-            right: 15px;
+            left: -30px;
+            width: 800px;
           }
 
           &_rectangles{
-            bottom: 560px;
-            right: -1px;
-            gap: 20px;
+            bottom: 635px;
+            left: 20px;
+            gap: 45px;
 
             &-colored1{
+              left: 50px;
+              top: 65px;
               width: 50%;
-              left: 30px;
-              top: 63px;
             }
 
             &-colored2{
-              width: 70%;
-              bottom: 110px;
+              bottom: 155px;
+              left: -25px;
             }
           }
           
@@ -160,9 +192,10 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: $tablet-lg) {
   .lading-top {
-    height: 800px;
+    max-height: 85vh;
+
     .container {
       max-width: 100vw;
       width: 90%;
@@ -171,6 +204,94 @@
         display: flex;
         flex-direction: row;
         height: 70%;
+
+        &-info {
+          line-height: 220%;
+          min-width: 40vw;
+          margin: 9vh 0;
+
+          &_heading {
+            font-size: 50px;
+
+            &-span {
+              display: block;
+              font-size: 45px;
+              font-weight: bolder;
+              margin-bottom: 20px;
+            }
+          }
+
+          &_text-v1 {
+            display: none;
+          }
+
+          &_text-v2 {
+            display: block;
+            color: $white;
+            line-height: 40px;
+            margin-bottom: 35px;
+
+            &_p {
+              margin: 0;
+              font-size: 32px;
+              font-weight: lighter;
+            }
+          }
+
+          &_button {
+            font-size: 20px;
+            padding: 1rem 0;
+            margin: 0;
+            width: 95%;
+          }
+        }
+
+        &-image {
+          position: relative;
+          right: 100px;
+
+          &_women {
+            top: 40px;
+          }
+
+          &_rectangles {
+            bottom: 40%;
+            left: -10vw;
+            gap: 20px;
+
+            &-colored1 {
+              max-width: 50%;
+              left: 60px;
+              top: 150px;
+            }
+
+            &-colored2 {
+              width: 70vw;
+              bottom: 10vh;
+              right: 4rem;
+              max-width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: $desktop-md){
+  .lading-top {
+    max-width: 100vw;
+    max-height: 85vh;
+    .container {
+      max-width: 100vw;
+      width: 90%;
+      
+      .hero {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
         &-info {
           line-height: 220%;
           min-width: 40vw;
@@ -214,30 +335,51 @@
 
         &-image {
           &_women {
-            top: -10vw;
-            right: 7vw;
-            width: 55vw;
+            top: -5vh;
+            right:-10rem;
+            left: -200px;
+            width:auto;
+            min-width: 60rem;
+            height: auto;
           }
 
           &_rectangles {
-            bottom: 105vh;
-            right: 10vw;
-            gap: 20px;
+            bottom: 45%;
+            left: -10vw;
+            gap: 100px;
 
             &-colored1 {
-              width: 50%;
+              max-width: 45%;
               left: 80px;
               top: 150px;
             }
 
             &-colored2 {
-              width: 70%;
-              bottom: 140px;
-              left: 10px;
+              bottom: 10vh;
+              left: 1px;
+              max-width: 45%;
             }
           }
         }
       }
     }
   }
+}
+
+
+@media screen and (min-width: $desktop-lg) {
+  .hero{
+    &-info{
+      padding-top: 40px;
+    }
+
+    &-image {
+      padding-left: 4rem;
+
+      &_women {
+        bottom: 3rem;
+      }
+    }
+  }
+  
 }
