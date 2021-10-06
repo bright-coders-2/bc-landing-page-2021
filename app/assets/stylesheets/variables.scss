@@ -4,11 +4,23 @@ $indigo: #5000ff;
 $turquoise: #5eefe1;
 $black: #282828;
 $white: #fff;
+//Breakpoints
+$mobile-md: 375px;
+$mobile-lg: 410px;
+$tablet-md: 768px;
+$tablet-lg: 1024px;
+$desktop-md: 1200px;
+$desktop-lg: 1920px;
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @mixin button($bg-color, $border-radius, $color-text, $padding-top_bottom, $padding-left_right) {
   background-color: $bg-color;
   border-radius: $border-radius;
   color: $color-text;
   padding: $padding-top_bottom $padding-left_right;
   text-decoration: none;
+}
+
+*{
+  font-family: Ubuntu;
 }
