@@ -38,3 +38,18 @@
     </div>
   </div>
 <% end %>
+
+<div class="programs_container">
+ <h1>Nuestros programas</h1>
+  <div class="white_container">
+    <% t('our_programs.items').each do |item| %>
+      <div class="program">
+        <%=image_tag(item[:img], alt: t('hero.image_background'), class:item[:class])%>
+        <h4><%=item[:title]%></h4>
+        <p><%=item[:description]%></p>
+      </div>
+    <% end %>
+  </div>
+<div>
+
+</div>
