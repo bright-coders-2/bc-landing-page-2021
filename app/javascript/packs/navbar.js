@@ -19,10 +19,13 @@ document.addEventListener("turbolinks:load", function () {
   }
 
   window.addEventListener("resize", function(){
-    if (window.matchMedia("(min-width: 992px)").matches){
+    let aria = document.getElementById('button').getAttribute("aria-expanded"); 
+    if ((aria == "true") && (window.matchMedia("(min-width: 992px)").matches)) {
+      logoContainer.className = 'logo-container-close';
       document.getElementById("logo").setAttribute('src', logos[0]);
-    }else{
-      if (!document.getElementById('button').classList.contains('collapsed')) {
+    }else {
+      if ((aria == "true")) {
+        logoContainer.className = 'logo-container-open';
         document.getElementById("logo").setAttribute('src', logos[1]);
       }
     }
