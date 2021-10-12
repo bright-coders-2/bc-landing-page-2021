@@ -1,0 +1,12 @@
+@import "./../utils/variables";
+@import "./../base/typography.scss";
+
+.title {
+  font-family: $ubuntu;
+  font-weight: bolder;
+  color: $azul; 
+}
+
+.text {
+  font-family: $ubuntu; 
+}
