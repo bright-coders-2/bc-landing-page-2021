@@ -35,3 +35,6 @@ en:
                 Intermediate object-oriented programming in HTML, CCS, and JS to start a career in technology.
                 It is also an option to accredit internships or professional stays."
       icon: 'icon-lamp'
+  testimonial:
+    text1: "Sam, one of our first"
+    text2: "BrightCoders"
