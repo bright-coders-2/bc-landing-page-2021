@@ -1,12 +1,73 @@
 @import "./../utils/variables";
 @import "./../base/typography.scss";
 
-.title {
-  font-family: $ubuntu;
-  font-weight: bolder;
-  color: $azul; 
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.text {
-  font-family: $ubuntu; 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_container {
+  background-color: white;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card_image {
+  height: 100%;
+  max-width: 100%;
+  margin: 5% auto 5% auto;
+  display: block;
+}
+
+.card_content {
+  padding: 1rem;
+}
+
+.card_title {
+  font-family: $ubuntu;
+  font-weight: bold;
+  color: $azul;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  font-family: $ubuntu;
+  font-size: 0.875rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  height: 100px;
+  max-width: auto;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
 }

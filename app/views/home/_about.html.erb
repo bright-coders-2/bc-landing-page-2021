@@ -1,20 +1,20 @@
-<section class="container mt-5">
-  <h1 class="text-center banner-top">BrightCoders</h1>
-  <div class="text-center"><span class="banner-bottom">for a brighter future!</span></div>
+<section class="main">
+  <h1 class="text-center banner-top my-3">BrightCoders</h1>
+  <div class="text-center mb-4"><span class="banner-bottom">for a brighter future!</span></div>
   
-  <div class="row flex-sm-row mt-4 mx-3">
+  <div class="cards">
     <% t('description_section.items').each do |item| %>
-			<div class="col-lg-4 col-md-6 p-2">
-				<div class="card">
-					<div class="p-3 text-center"><%= image_tag( item[:icon], class: 'fit-image-first card-img-top', alt:"icon cap") %></div>
-					<div class="card-body">
-						<h5 class="title"><%= item[:title] %></h5>
-						<p class="text">
-							<%= item[:description] %>
-						</p>
-					</div>
-				</div>
-			</div>
-		<% end %>
+      <div class="cards_item">
+        <div class="card_container">
+          <div class="card_image"><%= image_tag( item[:icon]) %></div>
+            <div class="card_content">
+            <h2 class="card_title"><%= item[:title] %></h2>
+            <p class="card_text">
+              <%= item[:description] %>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </section>
