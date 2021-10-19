@@ -1,0 +1,20 @@
+<section class="main">
+  <h1 class="text-center banner-top my-3">BrightCoders</h1>
+  <div class="text-center mb-4"><span class="banner-bottom">for a brighter future!</span></div>
+  
+  <div class="cards">
+    <% t('description_section.items').each do |item| %>
+      <div class="cards_item">
+        <div class="card_container">
+          <div class="card_image"><%= image_tag( item[:icon]) %></div>
+            <div class="card_content">
+            <h2 class="card_title"><%= item[:title] %></h2>
+            <p class="card_text">
+              <%= item[:description] %>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+@import "./../utils/variables";
+@import "./../base/typography.scss";
+
+.banner-top {  
+  font-family: $ubuntu;
+  font-weight: bold;
+}
+
+.banner-bottom {
+  font-family: $ubuntu;
+  font-weight: bold;
+  font-size: 32px;
+  background-color: $amarillo;
+  padding: 10px;
+}
+
+@media screen and (max-width: 500px){
+  .banner-bottom {
+    font-family: $ubuntu;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: $amarillo;
+    padding: 2px;
+  }
+}
