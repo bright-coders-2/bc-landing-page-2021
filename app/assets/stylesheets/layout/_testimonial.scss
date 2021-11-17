@@ -1,0 +1,52 @@
+@import '../variables.scss';
+
+.testimonial {
+  font-size: 2rem;
+  line-height: 1.16;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-testimonial-1 {
+  margin: 7.5rem auto 0.625;
+}
+
+.background-title-testimonial-2 {
+  width: 15rem;
+  margin: 0.625rem auto 3rem;
+  padding: 0.438rem 2.625rem 1rem;
+  background-color: $yellow;
+
+  .title-testimonial-2 {
+    font-weight: bold;
+    line-height: 1.16;
+  }
+}
+
+.testimonial-video {
+  video {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    border-radius: 2.5%;
+  }
+}
+
+@media screen and (max-width: $tablet-md) {
+  .background-title-testimonial-2 {
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: $tablet-lg) {
+  .testimonial {
+    font-size: 3.5rem;
+  }
+  .background-title-testimonial-2 {
+    width: 27.5rem;
+  }
+}

@@ -35,3 +35,6 @@ es:
                 intermedios de programación orientada a objetos en HTML, CCS, y JS para iniciar una carrera en tecnología.
                 También es una opción para acreditar las prácticas o estancias profesionales."
       icon: 'icon-lamp'
+  testimonial:
+    text1: "Sam, una de nuestras primeras"
+    text2: "BrightCoders"
